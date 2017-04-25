@@ -1,0 +1,36 @@
+.rogin-inner {
+    width: ;
+    border: 1px solid rgba(180,180,180,0.4);
+    padding: 30px;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.4);
+}
+
+#sign {
+}
+
+.inner1 .form-group {
+    margin-bottom: 20px;
+}
+
+.frame-heght {
+    height: 45px;
+}
+
+.btn-sign {
+    background: linear-gradient(#ffdead,#ff9500);
+    box-shadow: 0px 2px 10px -4px rgba(0,0,0,0.4);
+    border-color: rgba(180,180,180,1);
+    width: 100%;
+}
+
+.btn-sign:active{
+    background: linear-gradient(#ffdead,#ff9500);
+    opacity: 0.6;
+}
+
+.inner2 p{
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid rgba(180,180,180,0.4);
+    padding-top: 10px;
+}
