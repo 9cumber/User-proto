@@ -57,13 +57,13 @@
     <!--main article-->
     <div id="main-article" class="container">
       <div calss="row">
-	<div class="col-sm-3">
+	
+	<div class="col-sm-3 list-group">
 	  <span>分担ページ</span>
-	  <ul>
-	    <li><a href="./bookinfo.html">商品情報ページ</a></li>
-	    <li><a href="#">取り置き予約ページ</a></li>
-	    <li><a href="./rogin.html">ログイン画面</a></li>
-	  </ul>
+	  <a href="./index.html" class="list-group-item active">トップページ</a>
+	  <a href="./bookinfo.html" class="list-group-item">商品情報ページ</a>
+	  <a href="./reservation.html" class="list-group-item">取り置き予約ページ</a>
+	  <a href="./login.html" class="list-group-item">ログイン画面</a>
 	</div>
 	
 	<div class="col-sm-9">
@@ -78,16 +78,62 @@
 	    <div id="intro">
 	      ここに本の紹介文
 	    </div>
-	    <div id="reservation-button">
-	      <button type="button" class="btn">取り置き予約</button>
+	    
+	    
+	    <button type="button" class="btn btn-primary" id="reservation-button" data-toggle="modal" data-target="#ResultMessage">
+	      取り置き予約
+	    </button>
+	    
+	    <div class="modal fade" id="ResultMessage" tabindex="-1">
+	      <div class="modal-dialog">
+		
+		<div class="modal-content">
+		  
+		  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ol class="breadcrumb col-sm-11">
+		      <li><a href="#">検索結果</a></li>
+		      <li><a href="./bookinfo.html">商品情報</a></li>
+		      <li><a href="./login.html">ログイン</a></li>
+		  </ol>
+		    
+		    <ol class="breadcrumb col-sm-11">
+		      <li><a href="#">検索結果</a></li>
+		      <li><a href="./bookinfo.html">商品情報</a></li>
+		      <li class="active">取り置き予約確認</li>
+		    </ol>
+		  </div>
+		  
+		  <div class="modal-body">
+                    <div class="alert alert-warning" role="alert"><strong>warning</strong>: ログインした後、予約を完了してください。	    
+		    </div>
+		    <a href="./login.html" class="btn btn-link">
+		      ログイン
+		    </a>
+		    
+		    <div class="alert alert-success" role="alert"><strong>confirmation</strong>: 取り置き予約を完了してもよろしいですか。	    
+		    </div>
+		    <a href="./reservation.html" class="btn btn-link">
+		      予約する
+		    </a>
+		  </div>
+		  
+		  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+		  </div>
+		</div>
+	      </div>
 	    </div>
+	    
 	  </div>
-	  
 	</div>
       </div>
     </div>
     <!--end main article-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/style.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

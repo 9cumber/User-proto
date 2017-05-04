@@ -1,4 +1,4 @@
-/*$(document).ready(function () {
+$(document).ready(function () {
     $('.forgot-pass').click(function(event) {
 	$(".pr-wrap").toggleClass("show-pass-reset");
     }); 
@@ -6,7 +6,7 @@
     $('.pass-reset-submit').click(function(event) {
 	$(".pr-wrap").removeClass("show-pass-reset");
     }); 
-});*/
+});
 
 
 function check(){
@@ -19,10 +19,10 @@ function check(){
     }
 
     if(flag){
-	window.alert('Eメールアドレス、またはパスワードが正しくありません');
+	window.alert('入力情報が正しく入力されていません');
 	return false;
     }
     else{
-	location.href="./index.html";
+	location.href="./admin_proto.html";
     }
 }
